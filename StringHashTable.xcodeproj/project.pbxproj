@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4939FC511C269EA300A497FF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC501C269EA300A497FF /* main.cpp */; };
+		4939FC531C269EA300A497FF /* StringHashTable.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4939FC521C269EA300A497FF /* StringHashTable.1 */; };
+		4939FC5B1C269EF400A497FF /* StringHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC591C269EF400A497FF /* StringHashTable.cpp */; };
+		4939FC911C27BA2200A497FF /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC8F1C27BA2200A497FF /* Test.cpp */; };
+		4939FC941C27D90200A497FF /* LinearProbHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC921C27D90200A497FF /* LinearProbHashTable.cpp */; };
+		4939FC981C2C8A7A00A497FF /* MyHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC961C2C8A7A00A497FF /* MyHeap.cpp */; };
+		4939FC9B1C2E142900A497FF /* MySegmentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC991C2E142900A497FF /* MySegmentTree.cpp */; };
+		499297601C34F655003EB758 /* TopologicalSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4992975E1C34F655003EB758 /* TopologicalSort.cpp */; };
+		499297861C4F5D5D003EB758 /* Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499297841C4F5D5D003EB758 /* Semaphore.cpp */; };
+		499297921C55A119003EB758 /* IMServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499297901C55A119003EB758 /* IMServer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4939FC4B1C269EA300A497FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				4939FC531C269EA300A497FF /* StringHashTable.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4939FC4D1C269EA300A497FF /* StringHashTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StringHashTable; sourceTree = BUILT_PRODUCTS_DIR; };
+		4939FC501C269EA300A497FF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = StringHashTable/main.cpp; sourceTree = "<group>"; };
+		4939FC521C269EA300A497FF /* StringHashTable.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = StringHashTable.1; sourceTree = "<group>"; };
+		4939FC591C269EF400A497FF /* StringHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringHashTable.cpp; sourceTree = "<group>"; };
+		4939FC5A1C269EF400A497FF /* StringHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHashTable.h; sourceTree = "<group>"; };
+		4939FC8C1C278DD500A497FF /* MyStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
+		4939FC8D1C278E0E00A497FF /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
+		4939FC8E1C27B74000A497FF /* JMyStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMyStack.h; sourceTree = "<group>"; };
+		4939FC8F1C27BA2200A497FF /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		4939FC901C27BA2200A497FF /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		4939FC921C27D90200A497FF /* LinearProbHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearProbHashTable.cpp; sourceTree = "<group>"; };
+		4939FC931C27D90200A497FF /* LinearProbHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearProbHashTable.h; sourceTree = "<group>"; };
+		4939FC951C2A800F00A497FF /* Myqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Myqueue.h; sourceTree = "<group>"; };
+		4939FC961C2C8A7A00A497FF /* MyHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyHeap.cpp; sourceTree = "<group>"; };
+		4939FC971C2C8A7A00A497FF /* MyHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeap.h; sourceTree = "<group>"; };
+		4939FC991C2E142900A497FF /* MySegmentTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySegmentTree.cpp; sourceTree = "<group>"; };
+		4939FC9A1C2E142900A497FF /* MySegmentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentTree.h; sourceTree = "<group>"; };
+		4992975E1C34F655003EB758 /* TopologicalSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TopologicalSort.cpp; sourceTree = "<group>"; };
+		4992975F1C34F655003EB758 /* TopologicalSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopologicalSort.h; sourceTree = "<group>"; };
+		499297841C4F5D5D003EB758 /* Semaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Semaphore.cpp; sourceTree = "<group>"; };
+		499297851C4F5D5D003EB758 /* Semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphore.h; sourceTree = "<group>"; };
+		499297881C4F6027003EB758 /* SyncQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncQueue.h; sourceTree = "<group>"; };
+		499297901C55A119003EB758 /* IMServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IMServer.cpp; sourceTree = "<group>"; };
+		499297911C55A119003EB758 /* IMServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMServer.h; sourceTree = "<group>"; };
+		499297931C55A132003EB758 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4939FC4A1C269EA300A497FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4939FC441C269EA300A497FF = {
+			isa = PBXGroup;
+			children = (
+				4939FC4F1C269EA300A497FF /* StringHashTable */,
+				499297831C4F5A07003EB758 /* System */,
+				4992978F1C52B928003EB758 /* IMServer */,
+				4939FC4E1C269EA300A497FF /* Products */,
+				4939FC501C269EA300A497FF /* main.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+		4939FC4E1C269EA300A497FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4939FC4D1C269EA300A497FF /* StringHashTable */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4939FC4F1C269EA300A497FF /* StringHashTable */ = {
+			isa = PBXGroup;
+			children = (
+				4939FC521C269EA300A497FF /* StringHashTable.1 */,
+				4939FC591C269EF400A497FF /* StringHashTable.cpp */,
+				4939FC5A1C269EF400A497FF /* StringHashTable.h */,
+				4939FC8C1C278DD500A497FF /* MyStack.h */,
+				4939FC8D1C278E0E00A497FF /* includes.h */,
+				4939FC8E1C27B74000A497FF /* JMyStack.h */,
+				4939FC8F1C27BA2200A497FF /* Test.cpp */,
+				4939FC901C27BA2200A497FF /* Test.h */,
+				4939FC921C27D90200A497FF /* LinearProbHashTable.cpp */,
+				4939FC931C27D90200A497FF /* LinearProbHashTable.h */,
+				4939FC951C2A800F00A497FF /* Myqueue.h */,
+				4939FC961C2C8A7A00A497FF /* MyHeap.cpp */,
+				4939FC991C2E142900A497FF /* MySegmentTree.cpp */,
+				4939FC9A1C2E142900A497FF /* MySegmentTree.h */,
+				4939FC971C2C8A7A00A497FF /* MyHeap.h */,
+				4992975E1C34F655003EB758 /* TopologicalSort.cpp */,
+				4992975F1C34F655003EB758 /* TopologicalSort.h */,
+			);
+			path = StringHashTable;
+			sourceTree = "<group>";
+		};
+		499297831C4F5A07003EB758 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				499297841C4F5D5D003EB758 /* Semaphore.cpp */,
+				499297851C4F5D5D003EB758 /* Semaphore.h */,
+				499297881C4F6027003EB758 /* SyncQueue.h */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		4992978F1C52B928003EB758 /* IMServer */ = {
+			isa = PBXGroup;
+			children = (
+				499297901C55A119003EB758 /* IMServer.cpp */,
+				499297911C55A119003EB758 /* IMServer.h */,
+				499297931C55A132003EB758 /* includes.h */,
+			);
+			name = IMServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4939FC4C1C269EA300A497FF /* StringHashTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4939FC561C269EA300A497FF /* Build configuration list for PBXNativeTarget "StringHashTable" */;
+			buildPhases = (
+				4939FC491C269EA300A497FF /* Sources */,
+				4939FC4A1C269EA300A497FF /* Frameworks */,
+				4939FC4B1C269EA300A497FF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StringHashTable;
+			productName = StringHashTable;
+			productReference = 4939FC4D1C269EA300A497FF /* StringHashTable */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4939FC451C269EA300A497FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Juan;
+			};
+			buildConfigurationList = 4939FC481C269EA300A497FF /* Build configuration list for PBXProject "StringHashTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4939FC441C269EA300A497FF;
+			productRefGroup = 4939FC4E1C269EA300A497FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4939FC4C1C269EA300A497FF /* StringHashTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4939FC491C269EA300A497FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4939FC911C27BA2200A497FF /* Test.cpp in Sources */,
+				4939FC9B1C2E142900A497FF /* MySegmentTree.cpp in Sources */,
+				499297921C55A119003EB758 /* IMServer.cpp in Sources */,
+				499297861C4F5D5D003EB758 /* Semaphore.cpp in Sources */,
+				499297601C34F655003EB758 /* TopologicalSort.cpp in Sources */,
+				4939FC941C27D90200A497FF /* LinearProbHashTable.cpp in Sources */,
+				4939FC511C269EA300A497FF /* main.cpp in Sources */,
+				4939FC5B1C269EF400A497FF /* StringHashTable.cpp in Sources */,
+				4939FC981C2C8A7A00A497FF /* MyHeap.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4939FC541C269EA300A497FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4939FC551C269EA300A497FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4939FC571C269EA300A497FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4939FC581C269EA300A497FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4939FC481C269EA300A497FF /* Build configuration list for PBXProject "StringHashTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4939FC541C269EA300A497FF /* Debug */,
+				4939FC551C269EA300A497FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4939FC561C269EA300A497FF /* Build configuration list for PBXNativeTarget "StringHashTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4939FC571C269EA300A497FF /* Debug */,
+				4939FC581C269EA300A497FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4939FC451C269EA300A497FF /* Project object */;
+}
