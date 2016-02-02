@@ -11,8 +11,11 @@
 const int IMServer::MAX_BUF = 1000;
 const int IMServer::NUM_THREADS = 2;
 const int IMServer::NUM_CLIENTS = 255;
+
 map<int, int> IMServer::IDtoFD = map<int,int>();
-map<int, int> IMServer::IDtoDestID = map<int, int>();
+//map<int, int> IMServer::IDtoDestID = map<int, int>();
+
+SyncQueue<string> IMServer::mQueue(255);
 
 IMServer::IMServer(){
 
@@ -69,7 +72,6 @@ void IMServer::connectClient(){
             return;
         }
         cout<<newfd[i]<<endl;
-        
         t[i] = thread(newThread, &newfd[i]);
         //t[i].join();
 //    while(true){
@@ -103,10 +105,10 @@ void IMServer::newThread(const int* vargp){
     }
     printf("recv data: %s\n", buf);
     parseMsg(fd, buf);
-    int clientID = buf[2] - '0';
-    int destID = IDtoDestID[clientID];
+    //int clientID = buf[2] - '0';
+    //int destID = IDtoDestID[clientID];
     
-    if(destID == 0){
+    //if(destID == 0){
         std::thread h(threadRead, &fd);
         std::thread h2(threadWrite, &fd);
         
@@ -123,12 +125,9 @@ void IMServer::newThread(const int* vargp){
         
         h.join();
         h2.join();
-    }
+    //}
     
-    else {
-        //int destfd = IDtoFD[destID];
-        
-    }
+    //cout<<"mQueue Size():"<<mQueue.queueSize()<<endl;
     
     //free(vargp);
     return;
@@ -139,7 +138,7 @@ void IMServer::parseMsg(int newfd, const string &msg){
     int destID = msg[0]-'0';
     clientID = msg[2]-'0';
     IDtoFD[clientID] = newfd;
-    IDtoDestID[clientID] = destID;
+    //IDtoDestID[clientID] = destID;
     
     cout<<"ID: "<<clientID<<", fd: "<<IDtoFD[clientID]<<endl;
     return;
@@ -150,6 +149,7 @@ void IMServer::threadRead(const int *varp){
     char buf1[255];
     while(true){
         memset(buf1, 0, sizeof(buf1));
+        
         cout<<"Received client Messages: ";
         int res = (int)read(sockfd, buf1, sizeof(buf1));
         if(res == -1){
@@ -157,6 +157,10 @@ void IMServer::threadRead(const int *varp){
             exit(1);
         }
         cout<<buf1<<endl;
+        
+        mQueue.insertItem(::string(buf1));
+        cout<<"QueueItems: "<<endl;
+        cout<<mQueue.queueSize()<<endl;
         usleep(1000000);
     }
     return;
@@ -167,8 +171,9 @@ void IMServer::threadWrite(const int *varp){
     int res;
     while(true){
         //cout<<"Server:Input message to send:"<<endl;
+        //string msg = mQueue.removeItem();
         res = (int)write(sockfd, "Server messages", 18);
-        cout<<"Messeges Sent"<<endl;
+        //cout<<"Messeges Sent"<<endl;
         if(res == -1){
             perror("recv()");
             exit(1);

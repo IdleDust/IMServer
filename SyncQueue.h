@@ -9,7 +9,9 @@
 #ifndef __StringHashTable__SyncQueue__
 #define __StringHashTable__SyncQueue__
 
-#include "Semaphore.h"
+#include "mySemaphore.h"
+#include <iostream>
+#include <stdio.h>
 #include <vector>
 
 using namespace std;
@@ -21,39 +23,49 @@ private:
     int front;
     int rear;
     int qSize;
-    Semaphore *qSem;
-    Semaphore *avaiSlotsSem;
-    Semaphore *avaiItemsSem;
+    MySemaphore *qSem;
+    MySemaphore *avaiSlotsSem;
+    MySemaphore *avaiItemsSem;
     
 public:
     
     SyncQueue(int maxSize){
         qSize = maxSize;
         q.resize(qSize+2);
+//        cout<<"qSize"<<q.size()<<endl;
         front = rear = 0;
-        qSem = new Semaphore(1);
-        avaiSlotsSem = new Semaphore(qSize);
-        avaiItemsSem = new Semaphore(0);
+        qSem = new MySemaphore(1);
+        avaiSlotsSem = new MySemaphore(qSize);
+        avaiItemsSem = new MySemaphore(0);
+//        cout<<"qSem: "<<qSem<<endl;
+//        cout<<"avaiSlotsSem: "<<avaiSlotsSem<<endl;
+//        cout<<"avaiItemsSem: "<<avaiItemsSem<<endl;
+//        cout<<"Queue created"<<endl;
+        
     }
     
     void insertItem(T item){
+//        cout<<"start"<<endl;
         avaiSlotsSem->pOperation();
+//        cout<<"start"<<endl;
+        
         qSem->pOperation();
         q[(++rear)%qSize] = item;
         qSem->vOperation();
-        int n = avaiItemsSem->vOperation();
-        printf("avai: %d\n", n);
+        avaiItemsSem->vOperation();
     }
     
     T removeItem(){
         T item;
-        int itemCount = avaiItemsSem->pOperation();
-        printf("itemCount: %d\n", itemCount);
+        avaiItemsSem->pOperation();
         qSem->pOperation();
         item = q[(++front)%qSize];
         qSem->vOperation();
         avaiSlotsSem->vOperation();
         return item;
+    }
+    int queueSize(){
+        return abs(rear-front);
     }
     
 };

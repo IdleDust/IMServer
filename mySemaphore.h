@@ -18,14 +18,16 @@
 
 using namespace std;
 
-class mySemaphore{
+class MySemaphore{
 private:
+    string semName;
+    static int semCount;
     sem_t *sem;
-public:
-    static string semName;
 
-    mySemaphore();
-    mySemaphore(unsigned int val);
+public:
+    
+    MySemaphore();
+    MySemaphore(unsigned int val);
     int pOperation();
     int vOperation();
 };

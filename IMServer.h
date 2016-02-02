@@ -12,7 +12,6 @@
 #include "includes.h"
 #include <thread>
 #include "SyncQueue.h"
-#include "Semaphore.h"
 
 //typedef void *(func)(void *);
 
@@ -23,15 +22,15 @@ class IMServer{
         
     static const int MAX_BUF;
     static map<int, int> IDtoFD;
-    static map<int, int> IDtoDestID;
+    //static map<int, int> IDtoDestID;
     static const int NUM_THREADS;
     static const int NUM_CLIENTS;
     
 public:
     int sockfd;
+    static SyncQueue<string> mQueue;
     //int newfd[2];
     struct sockaddr_in server_addr, client_addr;
-    
     IMServer();
     ~IMServer();
     void initSocket();

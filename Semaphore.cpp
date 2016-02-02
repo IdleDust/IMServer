@@ -10,9 +10,9 @@
 #include <iostream>
 using namespace std;
 
-string Semaphore::semName = "/tmp/mutex";
+string mySemaphore::semName = "/tmp/mutex";
 
-Semaphore::Semaphore(unsigned int val){
+mySemaphore::mySemaphore(unsigned int val){
     semName[semName.length()-1]++;
     sem = sem_open(semName.c_str(), O_RDWR|O_CREAT, 0644, val);
 //    int n = sem_init(sem, 0, val);
@@ -21,15 +21,15 @@ Semaphore::Semaphore(unsigned int val){
     cout<<sem<<endl;
 }
 
-Semaphore::Semaphore(){
+mySemaphore::mySemaphore(){
     sem_init(sem, 0, 1);
 }
 
-int Semaphore::pOperation(){
+int mySemaphore::pOperation(){
     return sem_wait(sem);
 }
 
-int Semaphore::vOperation(){
+int mySemaphore::vOperation(){
     return sem_post(sem);
 }
 

@@ -17,15 +17,16 @@
 //const int WRITER_NUM = 5;
 //const int READER_NUM = 5;
 //
-//Semaphore coutSem(1);
+//MySemaphore coutSem(1);
 //
 //void writeQueue(){
 //    while(1){
-//        usleep(5000000);
+//        usleep(500000);
 //        int n = rand()%10;
 //        if(n == 0) n++;
 //        syncQueue.insertItem(n);
 //        printf("Insert a number: %d\n", n);
+//        cout<<"QueueSize: "<<syncQueue.queueSize()<<endl;
 //    }
 //}
 //
@@ -34,15 +35,16 @@
 //        usleep(1000000);
 //        int n = syncQueue.removeItem();
 //        printf("Get a number: %d\n", n);
+//        cout<<"QueueSize: "<<syncQueue.queueSize()<<endl;
 //    }
 //}
 //
 //void test(){
-//    thread b(readQueue);
-//    thread d(readQueue);
-//    thread e(readQueue);
+//    thread b(writeQueue);
+//    thread d(writeQueue);
+//    thread e(writeQueue);
 //    usleep(1000000);
-//    thread a(writeQueue);
+//    thread a(readQueue);
 //    
 //    b.join();
 //    //    c.join();
@@ -54,7 +56,7 @@
 //
 //int main(int argc, const char * argv[])
 //{
-//    //test();
+//    test();
 //    return 0;
 //}
 //------------------------end------------------------------
@@ -70,5 +72,3 @@ int main(){
     server.connectClient();
     return 0;
 }
-
-

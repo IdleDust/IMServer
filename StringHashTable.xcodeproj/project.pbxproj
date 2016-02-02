@@ -15,8 +15,8 @@
 		4939FC981C2C8A7A00A497FF /* MyHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC961C2C8A7A00A497FF /* MyHeap.cpp */; };
 		4939FC9B1C2E142900A497FF /* MySegmentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4939FC991C2E142900A497FF /* MySegmentTree.cpp */; };
 		499297601C34F655003EB758 /* TopologicalSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4992975E1C34F655003EB758 /* TopologicalSort.cpp */; };
-		499297861C4F5D5D003EB758 /* Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499297841C4F5D5D003EB758 /* Semaphore.cpp */; };
 		499297921C55A119003EB758 /* IMServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499297901C55A119003EB758 /* IMServer.cpp */; };
+		49C01C681C5FEDE7002C8F30 /* mySemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49C01C661C5FEDE7002C8F30 /* mySemaphore.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,12 +52,12 @@
 		4939FC9A1C2E142900A497FF /* MySegmentTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentTree.h; sourceTree = "<group>"; };
 		4992975E1C34F655003EB758 /* TopologicalSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TopologicalSort.cpp; sourceTree = "<group>"; };
 		4992975F1C34F655003EB758 /* TopologicalSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopologicalSort.h; sourceTree = "<group>"; };
-		499297841C4F5D5D003EB758 /* Semaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Semaphore.cpp; sourceTree = "<group>"; };
-		499297851C4F5D5D003EB758 /* Semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphore.h; sourceTree = "<group>"; };
 		499297881C4F6027003EB758 /* SyncQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncQueue.h; sourceTree = "<group>"; };
 		499297901C55A119003EB758 /* IMServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IMServer.cpp; sourceTree = "<group>"; };
 		499297911C55A119003EB758 /* IMServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMServer.h; sourceTree = "<group>"; };
 		499297931C55A132003EB758 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
+		49C01C661C5FEDE7002C8F30 /* mySemaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mySemaphore.cpp; sourceTree = "<group>"; };
+		49C01C671C5FEDE7002C8F30 /* mySemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mySemaphore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 		499297831C4F5A07003EB758 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				499297841C4F5D5D003EB758 /* Semaphore.cpp */,
-				499297851C4F5D5D003EB758 /* Semaphore.h */,
+				49C01C661C5FEDE7002C8F30 /* mySemaphore.cpp */,
+				49C01C671C5FEDE7002C8F30 /* mySemaphore.h */,
 				499297881C4F6027003EB758 /* SyncQueue.h */,
 			);
 			name = System;
@@ -187,8 +187,8 @@
 			files = (
 				4939FC911C27BA2200A497FF /* Test.cpp in Sources */,
 				4939FC9B1C2E142900A497FF /* MySegmentTree.cpp in Sources */,
+				49C01C681C5FEDE7002C8F30 /* mySemaphore.cpp in Sources */,
 				499297921C55A119003EB758 /* IMServer.cpp in Sources */,
-				499297861C4F5D5D003EB758 /* Semaphore.cpp in Sources */,
 				499297601C34F655003EB758 /* TopologicalSort.cpp in Sources */,
 				4939FC941C27D90200A497FF /* LinearProbHashTable.cpp in Sources */,
 				4939FC511C269EA300A497FF /* main.cpp in Sources */,
